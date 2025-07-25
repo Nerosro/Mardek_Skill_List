@@ -117,22 +117,23 @@ function getSkills(character){
 					TypeImg.alt = arraySkill.Type;
 				var Name = document.createTextNode(arraySkill.Name);
 				var Found = document.createTextNode(arraySkill.Found);
-				var MasteredImg = document.createElement('img');
-					MasteredImg.src = "Images/Others/Mastered_" + check_Mastered + ".png";
-					MasteredImg.alt = check_Mastered;
+
+				if(arraySkill.Mastered !== "unable"){
+                    var MasteredImg = document.createElement('img');
+                        MasteredImg.src = "Images/Others/Mastered_" + check_Mastered + ".png";
+                        MasteredImg.alt = check_Mastered;
+
 					
-					
-				var aMastered = document.createElement('a'); //change this to input type checkbox and a label with the image in?
-					// aMastered.id=chapter;
-					aMastered.addEventListener('click', function () {
-						console.info(check_Mastered)
-						saveMastered(character.Name, arraySkill.Name, check_Mastered, MasteredImg); //Event listeners to change chapters
-						check_Mastered=!check_Mastered
-						
-						MasteredImg.src = "Images/Others/Mastered_" + check_Mastered + ".png";
-						MasteredImg.alt = check_Mastered;
-					});
-				
+                    var aMastered = document.createElement('a'); //change this to input type checkbox and a label with the image in?
+                        aMastered.addEventListener('click', function () {
+                            console.info(check_Mastered)
+                            saveMastered(character.Name, arraySkill.Name, check_Mastered, MasteredImg); //Event listeners to change chapters
+                            check_Mastered=!check_Mastered
+
+                            MasteredImg.src = "Images/Others/Mastered_" + check_Mastered + ".png";
+                            MasteredImg.alt = check_Mastered;
+                        });
+				}
 				
 				tdSkillType.appendChild(TypeImg)
 				tdSkillName.appendChild(Name)
