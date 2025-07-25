@@ -13,7 +13,7 @@ const MARDEK = {
 			]
 		},
 		Deugan: {
-			Image:"KidDeugan",
+			Image:"kidDeugan",
 			Name:"KidDeugan",
 			Skills:[
 				{Type: "Imagination", Name: "Strike", Found: "Big Stick", Mastered: false},
