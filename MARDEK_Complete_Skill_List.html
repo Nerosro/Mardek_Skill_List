@@ -1,0 +1,45 @@
+<html lang="en-US">
+	<head>
+		<title>MARDEK Complete Skill List</title>
+		<script type="text/javascript" src="data.js"></script>
+		<script type="text/javascript" src="Javascript/functions.js"></script>
+		
+		<link type="text/css" href="CSS/Skill_List.css" rel="stylesheet">
+		<link rel="Shortcut Icon" href="Images/favicon.ico" type="image/x-icon" />
+		<meta charset="UTF-8">
+
+	</head>
+	<body>
+		<div id="background"></div>
+		<div id="selectionDiv">
+			<div id="mardekTitle">
+				<img id="imgTitle" src="Images/Others/Mardek.png" alt="imgTitle" onclick="location.reload();">
+			</div>
+			<div id="divContainer">
+				<div id="divChapter">
+					<script>
+						window.onload = function(e){ 
+							getChapters();
+						}
+					</script>
+					
+				</div>
+				<div id="divCharacter">
+					<!--<div class="helptext">  Working on this part, Only CSS left
+						<p>SELECT A CHAPTER</p>
+					</div>-->
+				</div>
+			</div>
+			<div id="divReset">
+				<img id="imgReset" src="Images/Others/Reset.png" alt="imgReset" onclick="resetData()">
+			</div>
+		</div>
+		<div id="divSkillTable">
+			<div class="chosenChar">
+				<img id="currentSelected" src="Images/Sprites/Rohoph.gif" alt="Rohoph">
+			</div>
+			<div id="divSkillList">	
+			</div>
+		</div>
+	</body>
+</html>

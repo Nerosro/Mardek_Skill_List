@@ -1,0 +1,134 @@
+#background{
+	position: fixed;
+	height: 100%;
+	top: calc(0% + 112px);
+	width: 100%;
+	left: 0px;
+	background: -moz-linear-gradient(bottom,#885C40,#AB561A,#B14C14,#380F07);
+	background: -o-linear-gradient(bottom,#885C40,#AB561A,#B14C14,#380F07);
+	background: -webkit-linear-gradient(top,#885C40,#AB561A,#B14C14,#380F07);
+	background: linear-gradient(to bottom,#885C40,#AB561A,#B14C14,#380F07);
+}
+
+div#selectionDiv{
+	position:fixed;
+	display:flex;
+	width:100%;
+	justify-content: space-between;
+	height:90px;
+	padding:10px;
+	left:0px;
+	top:0px;
+	background:#180E0A;
+	border-bottom:2px solid #53371C;
+	color:#EFCB7F;
+	z-index:999999;
+}
+
+td{
+	text-align: center;
+	height:35px;
+}
+
+#imgTitle{
+	height:95px;
+}
+#divContainer{
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#divChapter{
+}	
+
+#divChapter td{
+	padding-left: 25px;
+}
+
+#divReset{
+	padding-right: 20px;
+}
+
+.tblcharacters{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#divCharacter{
+	width:100%;
+}
+
+#divCharacter td{
+	width:64px;
+	height:48px;
+	text-align:center;
+}
+
+.tblSkills{
+	left:120px;
+	position: relative;
+	margin-top:  160px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 200px;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	font-family: verdana;
+	font-size: 18px;
+	
+	width:850px;
+}
+
+.tblSkills td{
+	border: solid;
+	border-width: 2px;
+	padding: 5px;
+}
+
+#divSkillList{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#divSkillList td:first-child{
+	background:rgba(192,150,135,0.4);
+}
+
+#divSkillList td{
+	color:#C6B686;
+	background:rgba(83,65,39,0.8);
+}
+
+/* div.helptext */
+/* { */
+	/* position:absolute; */
+	/* right:calc(46%); */
+	/* text-align:right; */
+	/* margin: 0 auto; */
+/* } */
+
+.chosenChar
+{
+	position: fixed;
+	top: 280px;
+	left: 280;	
+}
+.chosenChar img
+{
+	height: 100px;
+}
+
+.footer {
+	position: fixed;
+	display:flex;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #180E0A;
+	color: white;
+}
+
+.footer p{
+	 margin-left: 20px;
+}

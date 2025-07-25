@@ -1,0 +1,16 @@
+Chapter 1
+	Kid Mardek and Kid Deugan can master insomnia, but it doesn't carry over to chapter 2
+
+
+Chapter 2
+	Mardek starts with Heal and Warp mastered
+	Emela starts with Lightning Bolt, Aqualung and DMG-20% mastered
+
+
+Chapter 3 (new characters only, Mastered skills from Chapter 2 get carried over)
+	Sslen'ck starts with Fire Breath and Dragon's Blood mastered
+	Solaar starts with Solar Flare and Pleasant Sunbeam mastered
+	Meraeador is not capable of mastering Invention skills, these are automatically mastered on equipping the related tools
+	Elwyen and Zach can equip items that boost M. ATK, but don't have any way of triggering these reactions, so they cannot master this
+	Legion starts with Mechanical Body mastered
+	
