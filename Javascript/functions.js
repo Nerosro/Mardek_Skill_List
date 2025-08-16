@@ -202,7 +202,7 @@ function createProgressBar(character, arraySkill, getProgress, tdSkillMastered){
     }
 
     var decreaseImg = document.createElement("img")
-        decreaseImg.src = "/Images/Others/Mardek_arrow_left.png"
+        decreaseImg.src = "Images/Others/Mardek_arrow_left.png"
 
     var decreaseButton = document.createElement("button")
         decreaseButton.id = arraySkill.Name+"_decrease";
