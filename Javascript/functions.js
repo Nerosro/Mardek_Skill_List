@@ -189,11 +189,11 @@ function createProgressBar(character, arraySkill, getProgress, tdSkillMastered){
     var progressBar = document.createElement('progress')
         progressBar.id = arraySkill.Name;
         progressBar.className = "progressBar"
-        progressBar.max = arraySkill.Total;
+        progressBar.max = (arraySkill.Total>0)? arraySkill.Total : 1;
         progressBar.value = getProgress;
 
     var masteredImg = document.createElement('img');
-        masteredImg.src = "Images/Others/mastered_true.png";
+        masteredImg.src = "Images/Others/Mastered_true.png";
         masteredImg.style.display = "none"; // Hide initially
         masteredImg.alt = "Mastered";
 
@@ -217,7 +217,7 @@ function createProgressBar(character, arraySkill, getProgress, tdSkillMastered){
         decreaseButton.appendChild(decreaseImg)
 
     var increaseImg = document.createElement("img")
-        increaseImg.src = "/Images/Others/Mardek_arrow_right.png"
+        increaseImg.src = "Images/Others/Mardek_arrow_right.png"
 
     var increaseButton = document.createElement("button")
         increaseButton.id = arraySkill.Name+"_increase";
