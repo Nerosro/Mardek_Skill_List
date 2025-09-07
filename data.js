@@ -284,7 +284,7 @@ const MARDEK = {
 			Image:"Donovan",
 			Name:"Donovan",
 			Skills:[
-				{Type: "Pyromancy", Name: "Flame", Found: "Ember Spear", Total: 20},
+				{Type: "Pyromancy", Name: "Flame", Found: "Ember Spear", Total: 10},
 				{Type: "Pyromancy", Name: "Blaze", Found: "Firefang", Total: 30},
 				{Type: "Pyromancy", Name: "Burn", Found: "Desert Spear", Total: 20},
 				{Type: "Pyromancy", Name: "Null Fire Once", Found: "Firestone Ring, Firefang", Total: 10},
@@ -361,7 +361,7 @@ const MARDEK = {
 			Image:"Sharla",
 			Name:"Sharla",
 			Skills:[
-				{Type: "Aeromancy", Name: "Lightning Bolt", Found: "Wing Spear", Total: 20},
+				{Type: "Aeromancy", Name: "Lightning Bolt", Found: "Wing Spear", Total: 10},
 				{Type: "Aeromancy", Name: "Thunderbolt", Found: "Magic Poker", Total: 30},
 				{Type: "Aeromancy", Name: "Healing Wind", Found: "Topaz", Total: 10},
 				{Type: "Aeromancy", Name: "Null Air Once", Found: "Iron Spear", Total: 10},
