@@ -363,7 +363,7 @@ const MARDEK = {
 			Skills:[
 				{Type: "Aeromancy", Name: "Lightning Bolt", Found: "Wing Spear", Total: 10},
 				{Type: "Aeromancy", Name: "Thunderbolt", Found: "Magic Poker", Total: 30},
-				{Type: "Aeromancy", Name: "Healing Wind", Found: "Topaz", Total: 10},
+				{Type: "Aeromancy", Name: "Healing Wind", Found: "Topaz", Total: 20},
 				{Type: "Aeromancy", Name: "Null Air Once", Found: "Iron Spear", Total: 10},
 				{Type: "Aeromancy", Name: "Remove Paralysis", Found: "Iron Spear", Total: 5},
 				{Type: "Aeromancy", Name: "Aero Shell", Found: "Obelisk", Total: 10},
