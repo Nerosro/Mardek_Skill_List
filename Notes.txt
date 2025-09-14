@@ -13,4 +13,6 @@ Chapter 3 (new characters only, Mastered skills from Chapter 2 get carried over)
 	Meraeador is not capable of mastering Invention skills, these are automatically mastered on equipping the related tools
 	Elwyen and Zach can equip items that boost M. ATK, but don't have any way of triggering these reactions, so they cannot master this
 	Legion starts with Mechanical Body mastered
-	
+
+TODO
+    Fix incorrect mastery amounts (ongoing process)

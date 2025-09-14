@@ -1,45 +1,43 @@
 <html lang="en-US">
-	<head>
-		<title>MARDEK Complete Skill List</title>
-		<script type="text/javascript" src="data.js"></script>
-		<script type="text/javascript" src="Javascript/functions.js"></script>
-		
-		<link type="text/css" href="CSS/Skill_List.css" rel="stylesheet">
-		<link rel="Shortcut Icon" href="Images/favicon.ico" type="image/x-icon" />
-		<meta charset="UTF-8">
+    <head>
+        <title>MARDEK Complete Skill List</title>
+        <script src="data.js" type="text/javascript"></script>
+        <script src="Javascript/functions.js" type="text/javascript"></script>
 
-	</head>
-	<body>
-		<div id="background"></div>
-		<div id="selectionDiv">
-			<div id="mardekTitle">
-				<img id="imgTitle" src="Images/Others/Mardek.png" alt="imgTitle" onclick="location.reload();">
-			</div>
-			<div id="divContainer">
-				<div id="divChapter">
-					<script>
-						window.onload = function(e){ 
-							getChapters();
-						}
-					</script>
-					
-				</div>
-				<div id="divCharacter">
-					<!--<div class="helptext">  Working on this part, Only CSS left
-						<p>SELECT A CHAPTER</p>
-					</div>-->
-				</div>
-			</div>
-			<div id="divReset">
-				<img id="imgReset" src="Images/Others/Reset.png" alt="imgReset" onclick="resetData()">
-			</div>
-		</div>
-		<div id="divSkillTable">
-			<div class="chosenChar">
-				<img id="currentSelected" src="Images/Sprites/Rohoph.gif" alt="Rohoph">
-			</div>
-			<div id="divSkillList">	
-			</div>
-		</div>
-	</body>
+        <link href="CSS/Skill_List.css" rel="stylesheet" type="text/css">
+        <link href="Images/favicon.ico" rel="Shortcut Icon" type="image/x-icon"/>
+        <meta charset="UTF-8">
+
+    </head>
+    <body>
+        <div id="background"></div>
+        <div id="selectionContainer">
+            <div id="titleDiv">
+                <img alt="imgTitle" id="imgTitle" onclick="location.reload();" src="Images/Others/Mardek.png">
+            </div>
+            <div id="containerDiv">
+                <div id="chapterContainer">
+                    <script>
+                        window.onload = function () {
+                            getChapters();
+                            createFooter()
+                        }
+                    </script>
+                </div>
+                <div id="characterContainer"></div>
+            </div>
+            <div id="resetDiv">
+                <img alt="imgReset" id="imgReset" onclick="resetData()" src="Images/Others/Reset.png">
+            </div>
+        </div>
+        <div id="bodyContainer">
+            <div id="skillContent">
+                <div class="chosenChar">
+                    <img alt="Rohoph" id="currentSelected" src="Images/Sprites/Rohoph.gif">
+                </div>
+                <div id="skillListContainer"></div>
+            </div>
+        </div>
+        <footer class="footer"></footer>
+    </body>
 </html>
