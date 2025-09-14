@@ -119,7 +119,7 @@
 }
 
 .selected{
-    background: rgba(83, 65, 39, 0.8);
+    background: rgba(83, 65, 39, 0.8) !important;
     border: 2px solid #C6B686;
     border-radius: 10px;
 }
@@ -144,6 +144,7 @@
     gap: 10px;
     width: fit-content;
     margin: auto;
+    padding: 5px;
 }
 
 .skillSelectionContainer div {
@@ -159,6 +160,10 @@
     width: 50px;
 }
 
+.selectedSkill{
+    background: rgba(197, 170, 128, 0.8) !important;
+    border-radius: 10px;
+}
 
 #skillContainer {
     color: #C6B686;

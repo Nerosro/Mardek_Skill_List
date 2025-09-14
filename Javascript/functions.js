@@ -50,7 +50,7 @@ function getCharacters(chapter) {
             const characterDiv = document.createElement("div");
             characterDiv.className = "characterDiv";
             characterDiv.addEventListener('click', function () {
-                switchSelectedState(characterDiv);
+                switchSelectedState(characterDiv, "selected");
                 cleanUpContainer("skillListContainer", "skillContainer");
                 getSkillContent(objCharacter); //Event listeners to change characters
             });
@@ -72,15 +72,15 @@ function getCharacters(chapter) {
     chapterContainer.appendChild(characterListDiv)
 }
 
-function switchSelectedState(characterDiv) {
-    const currentSelected = document.getElementsByClassName("selected");
-    console.info(characterDiv)
-    console.info(currentSelected[0])
+function switchSelectedState(selectedDiv, className) {
+    const currentSelected = document.getElementsByClassName(className);
+    // console.info(selectedDiv)
+    // console.info(currentSelected[0])
     if (currentSelected.length > 0) {
-        console.log("removing selected from: ", currentSelected )
-        currentSelected[0].classList.remove("selected");
+        //console.log("removing selected from: ", currentSelected )
+        currentSelected[0].classList.remove(className);
     }
-    characterDiv.classList.add("selected");
+    selectedDiv.classList.add(className);
 }
 
 function getSkillContent(character) {
@@ -114,6 +114,7 @@ function createSkillList(character) {
         //console.info(skillType)
         const divSkillType = document.createElement("div");
         divSkillType.addEventListener('click', function () {
+            switchSelectedState(divSkillType, "selectedSkill")
             cleanUpContainer("skillContainer", "skillList");
             findSkillsForType(skillType, character); //Event listeners to change chapters
         });
@@ -190,7 +191,7 @@ function createMasteredCheckbox(character, arraySkill, getProgress, entry) {
     progressContainer.className = "progress-container";
     let masteredBtn = document.createElement("button");
     masteredBtn.className = "progressBtn mastered"
-    masteredBtn.addEventListener('click', function () {
+    masteredBtn.addEventListener('click', function toggleMastery() {
         //Event listeners to save mastered progress
         if (check_Mastered === true) {
             //If already mastered, reduce mastery progress by 1
@@ -200,12 +201,23 @@ function createMasteredCheckbox(character, arraySkill, getProgress, entry) {
             saveProgress(character.Name, arraySkill.Name, arraySkill.Total);
         }
 
-        check_Mastered = !check_Mastered
-        masteredImg.src = "Images/Others/Mastered_" + check_Mastered + ".png";
-        masteredImg.alt = check_Mastered;
+        if(arraySkill.Total == 0){
+            masteredImg.src = "Images/Others/Mastered_true.png";
+        }
+        else{
+            check_Mastered = !check_Mastered
+            masteredImg.src = "Images/Others/Mastered_" + check_Mastered + ".png";
+            masteredImg.alt = check_Mastered;
+        }
+
     });
 
-    masteredImg.src = "Images/Others/Mastered_" + check_Mastered + ".png";
+    if(arraySkill.Total == 0){
+        masteredImg.src = "Images/Others/Mastered_true.png";
+    }
+    else{
+        masteredImg.src = "Images/Others/Mastered_" + check_Mastered + ".png";
+    }
     masteredImg.alt = check_Mastered;
 
 
